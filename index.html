@@ -1,19 +1,19 @@
 ---
 layout: workshop      # DON'T CHANGE THIS.
 root: .               # DON'T CHANGE THIS EITHER.  (THANK YOU.)
-carpentry: "FIXME"    # what kind of Carpentry (must be either "dc" or "swc")
-venue: "FIXME"        # brief name of host site without address (e.g., "Euphoric State University")
-address: "FIXME"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
-country: "FIXME"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
-language: "FIXME"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
+carpentry: "swc"    # what kind of Carpentry (must be either "dc" or "swc")
+venue: "MIT"        # brief name of host site without address (e.g., "Euphoric State University")
+address: "TBA"      # full street address of workshop (e.g., "Room A, 123 Forth Street, Blimingen, Euphoria")
+country: "us"      # lowercase two-letter ISO country code such as "fr" (see https://en.wikipedia.org/wiki/ISO_3166-1)
+language: "en"     # lowercase two-letter ISO language code such as "fr" (see https://en.wikipedia.org/wiki/ISO_639-1)
 latlng: "FIXME"       # decimal latitude and longitude of workshop venue (e.g., "41.7901128,-87.6007318" - use http://www.latlong.net/)
-humandate: "FIXME"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
-humantime: "FIXME"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
-startdate: FIXME      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
-enddate: FIXME        # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
-instructor: ["FIXME"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
-helper: ["FIXME"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
-contact: ["fixme@example.org"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
+humandate: "11 May, 2017"    # human-readable dates for the workshop (e.g., "Feb 17-18, 2020")
+humantime: "9:00 am - 5:00 pm"    # human-readable times for the workshop (e.g., "9:00 am - 4:30 pm")
+startdate: 2017-05-11      # machine-readable start date for the workshop in YYYY-MM-DD format like 2015-01-01
+enddate: 2017-05-11       # machine-readable end date for the workshop in YYYY-MM-DD format like 2015-01-02
+instructor: ["Belinda Weaver", "Juliane Schneider"] # boxed, comma-separated list of instructors' names as strings, like ["Kay McNulty", "Betty Jennings", "Betty Snyder"]
+helper: ["Tomm Hohenstein"]     # boxed, comma-separated list of helpers' names, like ["Marlyn Wescoff", "Fran Bilas", "Ruth Lichterman"]
+contact: ["tah@bu.edu"]    # boxed, comma-separated list of contact email addresses for the host, lead instructor, or whoever else is handling questions, like ["marlyn.wescoff@example.org", "fran.bilas@example.org", "ruth.lichterman@example.org"]
 etherpad:             # optional: URL for the workshop Etherpad if there is one
 eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
@@ -47,11 +47,6 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
 </iframe>
 {% endif %}
 
-<h4>This is the workshop template.  Use it to create your own website.
-Delete these lines and please fill in 
-<a href="{{site.amy_site}}/submit">this self-organized workshop form</a>
-and the administrator will contact you if we need any extra information.</h4>
-
 <h2 id="general">General Information</h2>
 
 <!--
@@ -61,22 +56,10 @@ and the administrator will contact you if we need any extra information.</h4>
   the pitch.
 -->
 <p>
-  <a href="{{site.swc_site}}">Software Carpentry</a>
-  aims to help researchers get their work done
-  in less time and with less pain
-  by teaching them basic research computing skills.
-  This hands-on workshop will cover basic concepts and tools,
-  including program design, version control, data management,
-  and task automation.
-  Participants will be encouraged to help one another
-  and to apply what they have learned to their own research problems.
-</p>
-<p align="center">
-  <em>
-    For more information on what we teach and why,
-    please see our paper
-    "<a href="http://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745">Best Practices for Scientific Computing</a>".
-  </em>
+  This Library Carpentry, one-day, hands-on workshop will cover jargon busting, data structures, using regular expressions 
+  for pattern matching, use of the Bash shell (aka the command line) to speed up and automate tasks, and using 
+  OpenRefine for data cleanup.
+  Participants will be encouraged to help one another and to apply what they have learned to their own work.
 </p>
 
 <!--
@@ -87,7 +70,7 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <p id="who">
   <strong>Who:</strong>
-  The course is aimed at graduate students and other researchers.
+  The course is aimed at librarians and information workers.
   <strong>You don't need to have any previous knowledge of the tools that will
     be presented at the workshop.</strong>
 </p>
@@ -131,8 +114,8 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <p id="requirements">
   <strong>Requirements:</strong> Participants must bring a laptop with a
-  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) that they have administrative privileges
-  on. They should have a few specific software packages installed (listed
+  Mac, Linux, or Windows operating system (not a tablet, Chromebook, etc.) for which they have administrative privileges. 
+  They should have a few specific software packages installed (listed
   <a href="#setup">below</a>). They are also required to abide by
   Software Carpentry's
   <a href="{{site.swc_site}}/conduct.html">Code of Conduct</a>.
@@ -153,14 +136,6 @@ and the administrator will contact you if we need any extra information.</h4>
   <li>The room is wheelchair / scooter accessible.</li>
   <li>Accessible restrooms are available.</li>
 </ul>
-<p>
-  Materials will be provided in advance of the workshop and
-  large-print handouts are available if needed by notifying the
-  organizers in advance.  If we can help making learning easier for
-  you (e.g. sign-language interpreters, lactation facilities) please
-  <a href="mailto:{{page.contact}}">get in touch</a> and we will
-  attempt to provide them.
-</p>
 
 <!--
   CONTACT EMAIL ADDRESS
@@ -198,35 +173,21 @@ and the administrator will contact you if we need any extra information.</h4>
 -->
 <h2 id="schedule">Schedule</h2>
 
-<!-- DO NOT EDIT SURVEY LINKS -->
-<p><em>Surveys</em></p>
-<p>Please be sure to complete these surveys before and after the workshop.</p>
-<p><a href="{{ site.pre_survey }}{{ site.github.project_title }}">Pre-workshop Survey</a></p>
-<p><a href="{{ site.post_survey }}{{ site.github.project_title }}">Post-workshop Survey</a></p>
-
 <div class="row">
   <div class="col-md-6">
-    <h3>Day 1</h3>
+    <h3>Thursday, May 11</h3>
     <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Automating tasks with the Unix shell</td> </tr>
-      <tr> <td>10:30</td> <td>Coffee</td> </tr>
+      <tr> <td>09:00</td>  <td>Welcome, jargon busting, data structures</td> </tr>
+      <tr> <td>10:30</td> <td>Break</td> </tr>
+      <tr> <td>11:00</td> <td>Regular expressions for pattern matching</td> </tr>
       <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Building programs with Python</td> </tr>
+      <tr> <td>13:00</td>  <td>Introducing the shell</td> </tr>
       <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
+      <tr> <td>15:00</td>  <td>OpenRefine for data cleanup</td> </tr>
+      <tr> <td>17:00</td>  <td>Close</td> </tr>
     </table>
   </div>
-  <div class="col-md-6">
-    <h3>Day 2</h3>
-    <table class="table table-striped">
-      <tr> <td>09:00</td>  <td>Version control with Git</td> </tr>
-      <tr> <td>10:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>12:00</td>  <td>Lunch break</td> </tr>
-      <tr> <td>13:00</td>  <td>Managing data with SQL</td> </tr>
-      <tr> <td>14:30</td>  <td>Coffee</td> </tr>
-      <tr> <td>16:00</td>  <td>Wrap-up</td> </tr>
-    </table>
-  </div>
+
 </div>
 
 <!--
@@ -270,113 +231,14 @@ and the administrator will contact you if we need any extra information.</h4>
   please preview your site before committing, and make sure to run
   'tools/check' as well.
 -->
-<h2 id="syllabus">Syllabus</h2>
 
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-shell">The Unix Shell</h3>
-    <ul>
-      <li>Files and directories</li>
-      <li>History and tab completion</li>
-      <li>Pipes and redirection</li>
-      <li>Looping over files</li>
-      <li>Creating and running shell scripts</li>
-      <li>Finding things</li>
-      <li><a href="{{site.swc_pages}}/shell-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-python">Programming in Python</h3>
-    <ul>
-      <li>Using libraries</li>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li>Using Python from the command line</li>
-      <li><a href="{{site.swc_pages}}/python-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-r">Programming in R</h3>
-    <ul>
-      <li>Working with vectors and data frames</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Using R from the command line</li>
-      <li><a href="{{site.swc_pages}}/r-novice-inflammation/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  -->
-  <!--
-  <div class="col-md-6">
-    <h3 id="syllabus-matlab">Programming in MATLAB</h3>
-    <ul>
-      <li>Working with arrays</li>
-      <li>Reading and plotting data</li>
-      <li>Creating and using functions</li>
-      <li>Loops and conditionals</li>
-      <li>Defensive programming</li>
-      <li><a href="{{site.swc_pages}}/matlab-novice-inflammation/reference/">Reference...</a></li>
-     </ul>
-   </div>
-   -->
-</div>
-
-<div class="row">
-  <div class="col-md-6">
-    <h3 id="syllabus-git">Version Control with Git</h3>
-    <ul>
-      <li>Creating a repository</li>
-      <li>Recording changes to files: <code>add</code>, <code>commit</code>, ...</li>
-      <li>Viewing changes: <code>status</code>, <code>diff</code>, ...</li>
-      <li>Ignoring files</li>
-      <li>Working on the web: <code>clone</code>, <code>pull</code>, <code>push</code>, ...</li>
-      <li>Resolving conflicts</li>
-      <li>Open licenses</li>
-      <li>Where to host work, and why</li>
-      <li><a href="{{site.swc_pages}}/git-novice/reference/">Reference...</a></li>
-    </ul>
-  </div>
-  <div class="col-md-6">
-    <h3 id="syllabus-sql">Managing Data with SQL</h3>
-    <ul>
-      <li>Reading and sorting data</li>
-      <li>Filtering with <code>where</code></li>
-      <li>Calculating new values on the fly</li>
-      <li>Handling missing values</li>
-      <li>Combining values using aggregation</li>
-      <li>Combining information from multiple tables using <code>join</code></li>
-      <li>Creating, modifying, and deleting data</li>
-      <li>Programming with databases</li>
-      <li><a href="{{site.swc_pages}}/sql-novice-survey/reference/">Reference...</a></li>
-    </ul>
-  </div>
-</div>
-
-<hr/>
-
-<!--
-  SETUP
-
-  Delete irrelevant sections from the setup instructions.  Each
-  section is inside a 'div' without any classes to make the beginning
-  and end easier to find.
-
-  This is the other place where people frequently make mistakes, so
-  please preview your site before committing, and make sure to run
-  'tools/check' as well.
--->
 
 <h2 id="setup">Setup</h2>
 
 <p>
-  To participate in a Software Carpentry workshop, you will need
+  To participate in a Library Carpentry workshop, you will need
   access to the software described below. In addition, you will
-  need an up-to-date web browser.
+  need an up-to-date web browser suchas  Firefox or Chrome.
 </p>
 <p>
   We maintain a list of common issues that occur during installation as a reference for instructors
@@ -485,50 +347,7 @@ and the administrator will contact you if we need any extra information.</h4>
     <a href="https://help.github.com/articles/supported-browsers/">supported</a>
     web browser (current versions of Chrome, Firefox or Safari,
     or Internet Explorer version 9 or above).
-  </p>
-  <p>
-    You will need an account at <a href="https://github.com/">github.com</a>
-    for parts of the Git lesson. Basic GitHub accounts are free. We encourage
-    you to create a GitHub account if you don't have one already.
-    Please consider what personal information you'd like to reveal. For
-    example, you may want to review these
-    <a href="https://help.github.com/articles/keeping-your-email-address-private/">instructions
-    for keeping your email address private</a> provided at GitHub.
-  </p>
 
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="git-windows">Windows</h4>
-      <p>
-        Git should be installed on your computer as part of your Bash
-        install (described above).
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-macosx">Mac OS X</h4>
-      <a href="https://www.youtube.com/watch?v=9LQhwETCdwY ">Video Tutorial</a>
-      <p>
-        <strong>For OS X 10.9 and higher</strong>, install Git for Mac
-        by downloading and running the most recent "mavericks" installer from
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">this list</a>.
-        After installing Git, there will not be anything in your <code>/Applications</code> folder,
-        as Git is a command line program.
-        <strong>For older versions of OS X (10.5-10.8)</strong> use the
-        most recent available installer labelled "snow-leopard"
-        <a href="http://sourceforge.net/projects/git-osx-installer/files/">available here</a>.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="git-linux">Linux</h4>
-      <p>
-        If Git is not already available on your machine you can try to
-        install it via your distro's package manager. For Debian/Ubuntu run
-        <code>sudo apt-get install git</code> and for Fedora run
-        <code>sudo yum install git</code>.
-      </p>
-    </div>
-  </div>
-</div> <!-- End of 'Git' section. -->
 
 <div id="editor"> <!-- Start of 'editor' section. -->
   <h3>Text Editor</h3>
@@ -734,44 +553,6 @@ and the administrator will contact you if we need any extra information.</h4>
       </p>
     </div>
   </div>
-</div> <!-- End of 'R' section. -->
-
-<div id="sql"> <!-- Start of 'SQLite' section. -->
-  <h3>SQLite</h3>
-
-  <p>
-    SQL is a specialized programming language used with databases.  We
-    use a simple database manager called
-    <a href="http://www.sqlite.org/">SQLite</a> in our lessons.
-  </p>
-
-  <div class="row">
-    <div class="col-md-4">
-      <h4 id="sql-windows">Windows</h4>
-      <p>
-        The <a href="{{site.swc_installer}}">Software Carpentry Windows Installer</a>
-        installs SQLite for Windows.
-        If you used the installer to configure nano, you don't need to run it again.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-macosx">Mac OS X</h4>
-      <p>
-        SQLite comes pre-installed on Mac OS X.
-      </p>
-    </div>
-    <div class="col-md-4">
-      <h4 id="sql-linux">Linux</h4>
-      <p>
-        SQLite comes pre-installed on Linux.
-      </p>
-    </div>
-  </div>
-
-  <p><strong>If you installed Anaconda, it also has a copy of SQLite
-    <a href="https://github.com/ContinuumIO/anaconda-issues/issues/307">without support to <code>readline</code></a>.
-    Instructors will provide a workaround for it if needed.</strong></p>
-</div> <!-- End of 'SQLite' section. -->
 
 <!--
   Uncomment this section if you are using our virtual machine.
